@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="/styles/main.min.css">
 
 
-<style>:root{--accent-color:#28df99;}</style>
+<style>:root{--accent-color:#9DB4D3;}</style>
 
 
 <script>
@@ -80,7 +80,7 @@
                 return 'light';
             };
 
-            const configDefault = 'dark';
+            const configDefault = 'light';
             const currentTheme = window.localStorage && window.localStorage.getItem('theme');
             const initialTheme = currentTheme || configDefault || getSystemTheme();
             const isDark = initialTheme === 'dark';
@@ -354,7 +354,7 @@
             return 'light';
         };
 
-        const configDefault = 'dark';
+        const configDefault = 'light';
         const savedTheme = localStorage.getItem('theme');
         const theme = savedTheme || configDefault || getSystemTheme();
 
