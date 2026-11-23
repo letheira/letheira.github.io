@@ -75,7 +75,10 @@ a:hover {
   background-color: var(--accent-color);
   color: #f9f9f9;
 }
-::marker { color: #66DE93; }
+ol li::marker,
+ul li::marker {
+  color: #8B6CC4 !important;
+}
 
 em {
   font-style: normal;
@@ -331,11 +334,14 @@ figure { margin: 1.5em 0; }
 .mod-post__entry h3 { font-size: 17px; margin: 10px 0; }
 .mod-post__entry h4 { font-size: 15px; margin: 8px 0; }
 .mod-post__entry a {
-  color: #EC5858;
+  color: #98ADD4;
   font-weight: 500;
 }
+.mod-post__entry a:hover{
+  color:#6B84B9;
+}
 .mod-post__entry blockquote a {
-  color: #707070;
+  color: #8A7E9B;
   font-weight: 400;
 }
 .mod-post__entry blockquote a:hover {
@@ -624,7 +630,7 @@ figure { margin: 1.5em 0; }
   padding: 6px 16px;
   font-size: 13px;
   color: var(--accent-color);
-  border: 1px solid rgba(40, 223, 153, 0.3);
+  border: 1px solid rgba(157, 180, 211, 0.3);
   border-radius: 20px;
   cursor: pointer;
   text-decoration: none;
@@ -989,3 +995,4 @@ body.dark-theme .theme-toggle-moon { display: inline-block !important; color: #F
     line-height: 2.4em;
   }
 }
+
