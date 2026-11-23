@@ -79,6 +79,10 @@ ol li::marker,
 ul li::marker {
   color: #8B6CC4 !important;
 }
+body.dark-theme ol li::marker,
+body.dark-theme ul li::marker {
+  color: #9D88B8 !important;
+}
 
 em {
   font-style: normal;
@@ -597,6 +601,10 @@ figure { margin: 1.5em 0; }
   background: rgba(100, 79, 161, 0.08);
   border-radius: 20px;
   border: 1px solid rgba(100, 79, 161, 0.2);
+}
+body.dark-theme .memo-tags .memo-tag {
+  background: rgba(100, 79, 161, 0.22);
+  border: 1px solid rgba(100, 79, 161, 0.28);
 }
 
 .memo-meta {
