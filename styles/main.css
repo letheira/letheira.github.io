@@ -351,6 +351,18 @@ figure { margin: 1.5em 0; }
 .mod-post__entry blockquote a:hover {
   color: var(--accent-color);
 }
+body.dark-theme .mod-post__entry a {
+  color: #98ADD4;
+}
+body.dark-theme .mod-post__entry a:hover {
+  color: #6B84B9;
+}
+body.dark-theme .mod-post__entry blockquote a {
+  color: #8A7E9B;
+}
+body.dark-theme .mod-post__entry blockquote a:hover {
+  color: var(--accent-color);
+}
 
 .wzulli ol li,
 .wzulli ul li {
