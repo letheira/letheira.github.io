@@ -1015,4 +1015,11 @@ body.dark-theme .theme-toggle-moon { display: inline-block !important; color: #F
     line-height: 2.4em;
   }
 }
-
+.link-title {
+    border-left: 4px solid var(--accent-color) !important;
+    padding: 6px 12px !important;
+    margin: 22px 0 10px 0 !important;
+    background-color: rgba(157, 180, 211, 0.12) !important;
+    border-radius: 0 5px 5px 0 !important;
+    font-weight: 500 !important;
+}
