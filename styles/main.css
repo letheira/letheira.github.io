@@ -187,15 +187,15 @@ figure { margin: 1.5em 0; }
 
 .mod-index__logo {
   border-radius: 50%;
-  width: 72px;
-  height: 72px;
-  margin: 160px auto 20px auto;
+  width: 90px;
+  height: 90px;
+  margin: 120px auto 20px auto;
   display: block;
 }
 .mod-index__logo img {
   border-radius: 50%;
-  width: 72px;
-  height: 72px;
+  width: 90px;
+  height: 90px;
 }
 
 .intro {
@@ -1016,10 +1016,41 @@ body.dark-theme .theme-toggle-moon { display: inline-block !important; color: #F
   }
 }
 .link-title {
-    border-left: 4px solid var(--accent-color) !important;
-    padding: 6px 12px !important;
-    margin: 22px 0 10px 0 !important;
-    background-color: rgba(157, 180, 211, 0.12) !important;
-    border-radius: 0 5px 5px 0 !important;
+    position: relative;
+    padding: 4px 0 4px 14px;
+    margin: 18px 0 8px 0 !important;
     font-weight: 500 !important;
+    background: transparent !important;
+    border: none !important;
 }
+
+.link-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 1.3em;
+    background-color: var(--accent-color);
+    border-radius: 0;
+}
+
+::-webkit-scrollbar {
+    width: 7px; /* 这里控制粗细，改这个数字！ */
+}
+::-webkit-scrollbar-thumb {
+    background: transparent; /* 默认透明看不见 */
+    border-radius: 0; /* 方角 */
+}
+/* 鼠标移入页面，滑块才显示成你的强调色 */
+html:hover::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+
+
